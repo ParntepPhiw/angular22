@@ -1,0 +1,30 @@
+.box {
+    width: 300px;
+    border: 1px solid gray;
+    text-align: left;
+    padding: 10px;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#redd {
+    background-color:red;
+    color: white;
+}
+
+.taskbox {
+    background: lightgray;
+}
+
+.selected {
+    background: rgb(65, 153, 225);
+}
+
+.shown {
+    margin-bottom: 20px;
+}

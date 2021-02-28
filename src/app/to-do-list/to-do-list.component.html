@@ -1,0 +1,22 @@
+<main>
+    <div>
+        <app-task *ngFor = "let t of tasks"
+        [task] = "t"
+        (OnSelected)="selectedTask($event)"
+        (OnDeleted)="deletedTask($event)">
+
+        <!-- <span><button (click)="deleteTask(tasks.indexOf(t))">Delete111</button></span> -->
+        </app-task>        
+
+        
+    </div>
+
+    <div class="inputTask">
+        <h3>Add Task</h3>
+        <p>Name: <input [(ngModel)]="toDo" /></p>  
+        <p>Description: <input [(ngModel)]="desc" /></p> 
+        <button (click)="addTask()">Add</button>
+    </div>
+
+</main>
+

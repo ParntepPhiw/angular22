@@ -1,0 +1,18 @@
+<div class="box taskbox" [class.selected]="isSelected">
+    <p style="font-size: 1.2em; font-weight: bold;">
+        {{ task.name }}
+        <span><button (click)="select()">Select</button></span>
+        <span><button id="redd" (click)="delete()">Delete</button></span>
+    </p>
+    <!-- <p><span style="font-size: 1.2em; font-weight: bold;">Description: </span><span>{{ task.description }}</span></p>  -->
+    
+</div>
+
+<div class="box shown" *ngIf = "isShow">
+    <p style="font-size: 1.2em; font-weight: bold;">
+        Task: {{ task.name }}
+        
+    </p>
+    <p><span style="font-size: 1.2em; font-weight: bold;">Description: </span><span>{{ task.description }}</span></p> 
+    
+</div>
